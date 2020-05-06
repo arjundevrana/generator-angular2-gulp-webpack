@@ -9,7 +9,10 @@
     "url": "git+https://github.com/joshuacaron/generator-angular2-gulp-webpack.git"
   },
   "author": "Joshua Caron <joshua@joshuacaron.ca>",
-  "scripts": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
   "files": [
     "generators"
   ],
@@ -19,12 +22,14 @@
   "dependencies": {
     "yeoman-generator": "^0.19.0",
     "chalk": "^1.0.0",
-    "yosay": "^1.0.2"
+    "yosay": "^1.0.2",
+    "snyk": "^1.319.0"
   },
   "devDependencies": {},
   "bugs": {
     "url": "https://github.com/joshuacaron/generator-angular2-gulp-webpack/issues"
   },
   "homepage": "https://github.com/joshuacaron/generator-angular2-gulp-webpack#readme",
-  "directories": {}
+  "directories": {},
+  "snyk": true
 }
